@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-onepage-simplified",
-  "version": "0.1.2",
+  "version": "1.2.0",
   "description": "Simplified, compact, printable theme for JSON Resume",
   "author": "Ainsley Chong, Divyendu Singh, Akarsh Seggemu",
   "repository": {
@@ -9,8 +9,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "handlebars": "^4.0.11",
-    "css": "2.2.x"
+    "css": "2.2.x",
+    "handlebars": "^4.0.11"
   },
   "bugs": {
     "url": "https://github.com/akarsh/jsonresume-theme-onepage-simplified/issues"

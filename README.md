@@ -11,9 +11,10 @@ http://themes.jsonresume.org/theme/onepage-simplified
 ## Running
 
 ```
-sudo npm install -g resume-cli
+npm install -g resume-cli
 git clone https://github.com/akarsh/jsonresume-theme-onepage-simplified.git
 cd jsonresume-theme-onepage-simplified
+npm install
 resume serve
 ```
 
