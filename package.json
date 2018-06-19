@@ -1,11 +1,11 @@
 {
-  "name": "jsonresume-theme-onepage-ds",
-  "version": "0.0.1",
-  "description": "Compact, printable theme for JSON Resume",
-  "author": "Ainsley Chong, Divyendu Singh",
+  "name": "jsonresume-theme-onepage-simplified",
+  "version": "0.1.2",
+  "description": "Simplified, compact, printable theme for JSON Resume",
+  "author": "Ainsley Chong, Divyendu Singh, Akarsh Seggemu",
   "repository": {
     "type": "git",
-    "url": "https://github.com/divyenduz/jsonresume-theme-onepage-ds.git"
+    "url": "https://github.com/akarsh/jsonresume-theme-onepage-simplified.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -13,9 +13,8 @@
     "css": "2.2.x"
   },
   "bugs": {
-    "url": "https://github.com/divyenduz/jsonresume-theme-onepage-ds/issues"
+    "url": "https://github.com/akarsh/jsonresume-theme-onepage-simplified/issues"
   },
-  "homepage": "https://github.com/divyenduz/jsonresume-theme-onepage-ds",
-  "main": "index.js",
-  "devDependencies": {}
+  "homepage": "https://github.com/akarsh/jsonresume-theme-onepage-simplified",
+  "main": "index.js"
 }

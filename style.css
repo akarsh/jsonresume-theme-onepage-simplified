@@ -1,6 +1,6 @@
 body {
   background: #EEEEEE;
-  font: 13px "Times New Roman", Times, sans-serif;
+  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.4;
   margin: 40px 0;
 }
@@ -41,7 +41,7 @@ a {
 }
 
 .smallFont {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .sectionBlock {
@@ -59,6 +59,7 @@ a {
   width: 80%;
   vertical-align: top;
   display: inline-block;
+  text-align: justify;
 }
 
 .sectionContent ul {
@@ -75,16 +76,22 @@ a {
   float: right;
 }
 
+.sectionContent .company-website {
+  float: right;
+}
+
+.sectionContent .work-company {
+  font-style: italic
+}
+
 .sectionContent .separator {
   height: 14px;
 }
 
 .sectionLine {
-  border-style: dashed;
-  border-width: 1px;
-  border-color: #CFCFCF;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1em;
+  display: block;
+  margin-bottom: 1em;
 }
 
 .divider {
@@ -95,6 +102,10 @@ a {
 
 .summary {
   margin-top: 6px;
+}
+
+.educationBlock .studyType{
+  font-style: italic;
 }
 
 .skillBlock {
@@ -126,6 +137,11 @@ a {
   .sectionContent .date {
     padding-right: 2em;
   }
+
+  .sectionContent .company-website {
+    padding-right: 2em;
+  }
+
   .sectionName {
     width: auto;
   }

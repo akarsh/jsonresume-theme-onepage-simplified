@@ -1,115 +1,283 @@
 {
-  "basics": {
-    "name": "Richard Hendricks",
-    "label": "Programmer",
-    "picture": "",
-    "email": "richard.hendricks@gmail.com",
-    "phone": "(912) 555-4321",
-    "website": "http://richardhendricks.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
-    "location": {
-      "city": "San Francisco",
-      "countryCode": "US"
+    "basics":
+    {
+        "name": "Akarsh SEGGEMU",
+        "label": "Mobie Application Developer",
+        "picture": "image/standard_profile.jpg",
+        "email": "akarshseggemu@gmail.com",
+        "phone": "+491572417519",
+        "website": "https://sakarsh.com",
+        "summary": "Ever since I built my first Windows Phone app during final year of my Bachelor studies (i.e. Computer Science & Engineering), I have a passion for developing apps that stay in align with mobile usability guidelines. On 7 December 2017, I completed my master's degree in Computer Science from Technische Universitaet Berlin, Berlin. Self-taught Application developer (i.e. Windows Phone, Windows 8, Android and iOS), specializing in native apps. I have created apps for Windows Phone, Windows 8, Android and iOS that follow human interface design guidelines and fit into Windows, Android and iOS ecosystem with distinct branding.",
+        "location":
+        {
+            "address": "Franz-Mehring-Platz 2 / WEN 727-20-11-81",
+            "postalCode": "10243",
+            "city": "Berlin",
+            "countryCode": "DE",
+            "region": "Germany"
+        },
+        "profiles": [
+        {
+            "network": "Twitter",
+            "username": "akarshseggemu",
+            "url": "https://twitter.com/akarshseggemu"
+        },
+        {
+            "network": "LinkedIn",
+            "username": "akarshseggemu",
+            "url": "https://www.linkedin.com/in/akarshseggemu"
+        },
+        {
+            "network": "GitHub",
+            "username": "akarsh",
+            "url": "https://github.com/akarsh"
+        }]
     },
-    "profiles": [
-      {
-        "url": "http://twitter.com/neutralthoughts"
-      },
-      {
-        "url": "https://soundcloud.com/dandymusicnl"
-      }
-    ]
-  },
-  "work": [
+    "work": [
     {
-      "company": "Pied Piper",
-      "position": "CEO/President",
-      "website": "http://piedpiper.com",
-      "startDate": "2013",
-      "endDate": "2014",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
-      "details": [
-        { "text": "Build an algorithm for artist to detect if their music was violating copy right infringement laws", "comment": "Java" },
-        { "text": "Optimized an algorithm that holds the current world record for Weisman Scores", "comment": "c++" },
-        { "text": "Successfully won Techcrunch Disrupt" }
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "http://coderdojo.com/",
-      "startDate": "2012",
-      "endDate": "2013",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011",
-      "endDate": "2014",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
-    }
-  ],
-  "publications": [
-    {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
-    }
-  ],
-  "skills": [
-    {
-      "name": "Web Development",
-      "details": [
-        { "text": "HTML", "comment": "expert" },
-        { "text": "CSS", "comment": "expert" },
-        { "text": "Javascript", "comment": "expert" }
-      ]
+        "company": "Fyber GmbH",
+        "position": "Junior Solution Engineer",
+        "website": "https://www.fyber.com",
+        "startDate": "2018-01-01",
+        "endDate": "",
+        "summary": "",
+        "highlights": ["Guided and supported app and game developers in their integration with Fyber products i.e. Fyber native SDKs, plugins and APIs.",
+            "Received and resolved escalations from the app and game developers as well as account management relating to SDK and API integration, reporting discrepancies, use of the dashboard etc.",
+            "Used a variety of tools such as log analysis, SQL queries, Fyber in-house tools and worked closely with different teams (i.e. engineering, product and business intelligence) to get to the bottom of an issue.",
+            "Actively managed ongoing escalations and communicated with clients (external, mainly phone but onsite from time to time as well) and account management teams in the process of resolution.",
+            "Continuously helped to improve the operational workflow within the solution engineering organization by improving documentation as well as ticketing and prioritization processes.",
+            "Provided coaching and guidance in the analysis and resolution of issues.",
+            "Helped in setting up systems to monitor the health of integrations and products in use by clients and escalate irregularities."
+        ]
     },
     {
-      "name": "Compression",
-      "details": [
-        { "text": "Mpeg", "comment": "competent" },
-        { "text": "MP4", "comment": "competent" },
-        { "text": "GIF", "comment": "novice" }
-      ]
-    }
-  ],
-  "languages": [
+        "company": "Fyber GmbH",
+        "position": "Solution Engineer, App and Games - Werkstudent",
+        "website": "https://www.fyber.com",
+        "startDate": "2015-05-01",
+        "endDate": "2017-12-31",
+        "summary": "",
+        "highlights": ["Supported in integration and optimization of Fyber products for Fyber customers.",
+            "Investigated irregularities, malfunctions and issues related to Fyber products.",
+            "Produced functional projects for integrating Fyber products in Unity 3D, Android and iOS.",
+            "Tracked customer issues by using JIRA, documented internal projects in the internal wiki."
+        ]
+    },
     {
-      "language": "English",
-      "fluency": "Native speaker"
-    }
-  ],
-  "interests": [
+        "company": "Wkda GmbH",
+        "position": "Quality Assurance - Werkstudent",
+        "website": "https://www.wirkaufendeinauto.de",
+        "startDate": "2015-03-23",
+        "endDate": "2015-04-30",
+        "summary": "",
+        "highlights": ["Actively tested software features using both, manual and automated tests.",
+            "Reported test results and errors to the development team.",
+            "Assisted in the preparation of test plans for software testing.",
+            "Improved and maintained the quality of workflows and procedures."
+        ]
+    },
     {
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }
-  ]
+        "company": "Pricepanda Group GmbH",
+        "position": "Data/Data Maintenance Engineer - Wekstudent",
+        "website": "https://www.pricepanda.co.id/",
+        "startDate": "2014-12-22",
+        "endDate": "2015-03-19",
+        "summary": "",
+        "highlights": ["Built wrappers for online-shops based in APAC zone market (i.e., Philippines, Indonesia, and, Singapore)",
+            "Managed database tables & updated tables with the new crawled data from online- shops on daily basis",
+            "Documented project workflow in internal wiki documentation",
+            "Tracked internal issues using JIRA."
+        ]
+    },
+    {
+        "company": "German Aerospace Center (DLR)",
+        "position": "Java programmer - Werkstudent",
+        "website": "https://dlr.de",
+        "startDate": "2014-05-26",
+        "endDate": "2014-08-28",
+        "summary": "",
+        "highlights": ["Created maps of Berlin with geodatabase using GIS tools (i.e., PostGIS, OpenJump)",
+            "Maintained simulation programming scripts",
+            "Documented project workflow in internal wiki portal of DLR."
+        ]
+    },
+    {
+        "company": "Viatecla-Soluções Informáticas e Comunicações SA",
+        "position": "Software Development Engineer",
+        "website": "https://www.viatecla.com",
+        "startDate": "2013-02-25",
+        "endDate": "2013-06-25",
+        "summary": "",
+        "highlights": ["Created a functional windows phone 7.5 application for flight search, scheduling & ticket booking",
+            "Documented the project workflow and tests in MS word",
+            "Created a C# application to parse & create a Microsoft Excel file containing logs of SQL database tables of a magazine application published in iOS & Windows 8",
+            "Created an android application to implement Google Cloud Messaging Service (GCMS)."
+        ]
+    },
+    {
+        "company": "Edukinect",
+        "position": "Research & Development Engineer",
+        "website": "http://www.edu-kinect.com",
+        "startDate": "2012-05-01",
+        "endDate": "2013-02-21",
+        "summary": "",
+        "highlights": ["Created a functional application on windows 8 using metro user interface (UI)",
+            "Trained several students on Windows 8 application development."
+        ]
+    },
+    {
+        "company": "Ray Business Technologies Pvt Ltd",
+        "position": "Software Development Engineer Trainee",
+        "website": "https://www.raybiztech.com",
+        "startDate": "2012-02-27",
+        "endDate": "2012-04-30",
+        "summary": "",
+        "highlights": ["Created a functional windows phone 7.5 application for integration of Microsoft Dynamics CRM",
+            "Documented implementation of CRM in MS word."
+        ]
+    },
+    {
+        "company": "Edukinect",
+        "position": "Intern",
+        "website": "http://www.edu-kinect.com",
+        "startDate": "2011-09-12",
+        "endDate": "2012-01-31",
+        "summary": "",
+        "highlights": ["Created several functional applications in windows phone 7 & 7.5"]
+    }],
+    "volunteer": [],
+    "education": [
+    {
+        "institution": "Technical Universitaet Berlin",
+        "area": "Computer Science",
+        "studyType": "M.Sc.",
+        "startDate": "2016-10-01",
+        "endDate": "2017-12-07",
+        "gpa": "2.2",
+        "courses": []
+    },
+    {
+        "institution": "Beuth University of Applied Sciences",
+        "area": "Qualifizierung fuer zugewanderte Akademiker/innen",
+        "studyType": "Beuth Bonus",
+        "startDate": "2016-09-29",
+        "endDate": "2017-05-30",
+        "gpa": "",
+        "courses": []
+    },
+    {
+        "institution": "The Berlin School of Economics and Law",
+        "area": "Basics in Project Management",
+        "studyType": "",
+        "startDate": "2015-04-01",
+        "endDate": "2015-10-07",
+        "gpa": "1.7",
+        "courses": []
+    },
+    {
+        "institution": "J.N.Technological University Hyderabad",
+        "area": "Computer Science & Engineering",
+        "studyType": "B.Tech.",
+        "startDate": "2008-09-01",
+        "endDate": "2012-04-30",
+        "gpa": "2.7",
+        "courses": []
+    }],
+    "awards": [],
+    "publications": [],
+    "skills": [
+    {
+        "name": "Programming languages and scripts",
+        "level": "",
+        "keywords": [
+            "HTML",
+            "CSS",
+            "jQuery",
+            "Java",
+            "JavaScript",
+            "Swift"
+        ]
+    },
+    {
+        "name": "Data",
+        "level": "",
+        "keywords": [
+            "SQL",
+            "NoSQL (MongoDB)"
+        ]
+    },
+    {
+        "name": "Project management methodology",
+        "level": "",
+        "keywords": [
+            "Scrum",
+            "Agile"
+        ]
+    },
+    {
+        "name": "Version Control System",
+        "level": "",
+        "keywords": [
+            "Git",
+            "GitHub",
+            "GitLab"
+        ]
+    },
+    {
+        "name": "IDE",
+        "level": "",
+        "keywords": [
+            "Xcode",
+            "Android Studio",
+            "Eclipse"
+        ]
+    },
+    {
+        "name": "Continuous Integration ",
+        "level": "",
+        "keywords": [
+            "Jenkins",
+            "GitLab CI",
+            "Docker CI"
+        ]
+    },
+    {
+        "name": "Operating System",
+        "level": "",
+        "keywords": [
+            "macOS",
+            "Linux",
+            "Windows"
+        ]
+    },
+    {
+        "name": "Software / Applications",
+        "level": "",
+        "keywords": [
+            "Latex",
+            "Confluence",
+            "Wiki",
+            "Apache OpenOffice",
+            "MS Office",
+            "Jira",
+            "HappyFox",
+            "Adobe Photoshop",
+            "GIMP"
+        ]
+    }],
+    "languages": [
+    {
+        "language": "English",
+        "fluency": "Native proficiency"
+    },
+    {
+        "language": "German",
+        "fluency": "Professional working proficiency"
+    },
+    {
+        "language": "Telugu",
+        "fluency": "Native proficiency"
+    }],
+    "interests": [],
+    "references": []
 }

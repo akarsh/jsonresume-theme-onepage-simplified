@@ -14,6 +14,10 @@ function validateArray(arr) {
   return arr !== undefined && arr !== null && arr instanceof Array && arr.length > 0;
 }
 
+Handlebars.registerHelper('splitUrl', function(url) {
+  return url.split("/").slice(-1, url.length);
+});
+
 function render(resume) {
   // Split courses into 3 columns
   if (validateArray(resume.education)) {
