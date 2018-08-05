@@ -31,6 +31,16 @@
             "network": "GitHub",
             "username": "akarsh",
             "url": "https://github.com/akarsh"
+        },
+        {
+            "network": "stackoverflow",
+            "username": "akarsh",
+            "url": "https://stackoverflow.com/cv/akarsh"
+        },
+        {
+            "network": "Duolingo",
+            "username": "akarshseggemu",
+            "url": "https://www.duolingo.com/akarshseggemu"
         }]
     },
     "work": [
@@ -187,7 +197,7 @@
     "publications": [],
     "skills": [
     {
-        "name": "Programming languages and scripts",
+        "name": "Programming and Scripting languages",
         "level": "",
         "keywords": [
             "HTML",
@@ -202,8 +212,8 @@
         "name": "Data",
         "level": "",
         "keywords": [
-            "SQL",
-            "NoSQL (MongoDB)"
+            "SQL (MySQL, PostgreSQL)",
+            "NoSQL (MongoDB, Redis, Neo4j)"
         ]
     },
     {
@@ -233,7 +243,7 @@
         ]
     },
     {
-        "name": "Continuous Integration ",
+        "name": "Continuous Integration",
         "level": "",
         "keywords": [
             "Jenkins",
@@ -254,15 +264,16 @@
         "name": "Software / Applications",
         "level": "",
         "keywords": [
-            "Latex",
+            "JIRA",
             "Confluence",
             "Wiki",
-            "Apache OpenOffice",
+            "Slack",
             "MS Office",
-            "Jira",
+            "DBeaver",
             "HappyFox",
             "Adobe Photoshop",
-            "GIMP"
+            "GIMP",
+            "Charles Proxy"
         ]
     }],
     "languages": [
