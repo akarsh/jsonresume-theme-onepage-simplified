@@ -155,7 +155,34 @@
         "summary": "",
         "highlights": ["Created several functional applications in windows phone 7 & 7.5"]
     }],
-    "volunteer": [],
+    "volunteer": [
+    {
+        "organization": "AIESEC Hyderabad",
+        "position": "Sales & Marketing in Corperate Relations",
+        "website": "https://www.aiesec.in",
+        "startDate": "2011-08-01",
+        "endDate": "2012-09-30",
+        "summary": "",
+        "highlights": []
+    },
+    {
+        "organization": "Studentische Selbstverwaltung Franz-Mehring-Platz",
+        "position": "Board Member",
+        "website": "",
+        "startDate": "2017-04-01",
+        "endDate": "2017-11-30",
+        "summary": "",
+        "highlights": []
+    },
+    {
+        "organization": "Swift Dev Ninjas Meetup",
+        "position": "Co Organizer",
+        "website": "https://www.meetup.com/Swift-Dev-Ninjas",
+        "startDate": "2018-08-01",
+        "endDate": "",
+        "summary": "",
+        "highlights": []
+    }],
     "education": [
     {
         "institution": "Technical Universitaet Berlin",
@@ -193,8 +220,45 @@
         "gpa": "2.7",
         "courses": []
     }],
-    "awards": [],
-    "publications": [],
+    "awards": [
+    {
+        "title": "Developer, and, publisher for Windows Phone application",
+        "date": "2012-03-01",
+        "awarder": "Nokia, Microsoft",
+        "summary": "Awarded Nokia Lumia 800 for publishing windows phone application as part of the competition I Unlock Joy"
+    },
+    {
+        "title": "Prototype designer of Windows Phone application",
+        "date": "2012-01-01",
+        "awarder": "Microsoft",
+        "summary": "Awarded an AMAZON gift voucher for designing a prototype of Windows Phone application"
+    },
+    {
+        "title": "Programmer in Visual Studio 2012",
+        "date": "2012-08-01",
+        "awarder": "Microsoft",
+        "summary": "Awarded two pen drives 8 GB each for quiz competition on Visual Studio 2012"
+    },
+    {
+        "title": "Developer, and Publisher for Windows 8 Application",
+        "date": "2012-09-01",
+        "awarder": "Microsoft",
+        "summary": "Awarded three e-commerce vouchers worth Rs.9500/- INR each of FlipKart Inc from Microsoft ReImagination Contest"
+    },
+    {
+        "title": "Golden Ticket Pass for AppsWorld Germany 2015",
+        "date": "2015-04-01",
+        "awarder": "BEMYAPP",
+        "summary": "Awarded Golden Ticket Pass worth 995 Euros/- for winning in the twitter contest"
+    }],
+    "publications": [
+    {
+        "name": "Speech Processing, Speech Synthesis & Speech Recognition",
+        "publisher": "Yuva Engineers",
+        "releaseDate": "2010-05-01",
+        "website": "http://www.yuvaengineers.com/speech-processing-speech-synthesis-speech-recognition-s-akarsh-k-avinash",
+        "summary": "Speech recognition is an input system that consists of a microphone and speech recognition software. Speech recognition software is complex. Sounds received via a microphone must be broken down into phonemes; then, a “best guess” algorithm is used to match phonemes and syllables to a database of possible words. To solve speech inconsistencies like accent, volume, pitch, and inflection, male vs. female, sarcasm, and colloquialisms, the software must examine context and word patterns to determine the correct meaning. This requires an enormous database, which in turn requires a computer with very capable processing speed and memory. Speech recognition will greatly change the way information is input. Ease, convenience, and speed are three advantages to using a microphone instead of a keyboard. Speech recognition technology will have an impact on all careers but especially education. Business Education teachers must stay abreast of this technology and be willing to adjust their courses to best prepare students."
+    }],
     "skills": [
     {
         "name": "Programming and Scripting languages",
@@ -289,6 +353,50 @@
         "language": "Telugu",
         "fluency": "Native proficiency"
     }],
-    "interests": [],
-    "references": []
+    "interests": [
+    {
+        "name": "Dance",
+        "keywords": [
+          "Swing",
+          "Lindy Hop",
+          "Lindy Charleston"
+        ]
+    },
+    {
+        "name": "Long Boarding",
+        "keywords": []
+    },
+    {
+        "name": "Football",
+        "keywords": []
+    },
+    {
+        "name": "Rowing",
+        "keywords": []
+    },
+    {
+        "name": "Jogging",
+        "keywords": []
+    }],
+    "references": [
+    {
+        "name": "Prathap Reddy",
+        "reference": "Akarsh is very good team member and he always try to adopt to new technologies especially i like his dedication in work"
+    },
+    {
+        "name": "Ravindra Penumarthi",
+        "reference": "Akarsh has excellent developer skills and in depth knowledge on .NET Framework, Windows Phone and Windows Azure. I was in awe many times looking at the way he used API's in Windows Phone applications(i was a noob back then). He made app development look easy. I got to know about azure for the first time from Akarsh when we were working together at Edukinect. I still remember that day(2 years ago) when he explained everything in the air about Azure and SQL Azure connectivity and today i'm an Azure developer and finally i figured out what he was talking on that day."
+    },
+    {
+        "name": "Bruno Granja Camarero",
+        "reference": "Team-oriented, trustworthy and extremely focused on getting things done and achieving goals in order to deliver even more than what is expected. He is very assertive and proactive when dealing with every situation. And something I really appreciate: he is always keeping a positive vibe making work a lot easier and lighter. It was a pleasure to work with him."
+    },
+    {
+        "name": "Alexandra Toader",
+        "reference": "Was a pleasure working with you. Result oriented, fast learner and a great team player. You would definitely have a valuable impact on any of the companies you would join in the future."
+    },
+    {
+        "name": "Victor Castano",
+        "reference": "n a nutshell, Akarsh is one of the success stories at Fyber. He started as a Student Solution Engineer and quickly become an essential part of the team. Akarsh has a solid academic background, is very technical and customer oriented. With a wide mobile development background, Akarsh would be an asset to any organisation looking for a loyal and motivated engineer."
+    }]
 }
