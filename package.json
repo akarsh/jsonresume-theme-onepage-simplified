@@ -12,11 +12,14 @@
     "url": "https://github.com/akarsh/jsonresume-theme-onepage-simplified/issues"
   },
   "homepage": "https://github.com/akarsh/jsonresume-theme-onepage-simplified",
-  "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
+  "main": "./dist/index.js",
   "exports": {
-    "require": "./index.js",
-    "default": "./index.js"
+    "default": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "vite build",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "jsonresume",
@@ -25,5 +28,10 @@
   "dependencies": {
     "css": "2.2.x",
     "handlebars": "^4.0.11"
+  },
+  "devDependencies": {
+    "resumed": "^6.1.0",
+    "vite": "^8.0.3",
+    "vite-plugin-handlebars": "^2.0.0"
   }
 }
