@@ -16,5 +16,12 @@
     "url": "https://github.com/akarsh/jsonresume-theme-onepage-simplified/issues"
   },
   "homepage": "https://github.com/akarsh/jsonresume-theme-onepage-simplified",
-  "main": "index.js"
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "keywords": [
+    "jsonresume",
+    "jsonresume-theme"
+  ]
 }
