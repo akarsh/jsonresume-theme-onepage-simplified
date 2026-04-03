@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/akarsh/jsonresume-theme-onepage-simplified/compare/v1.3.0...v1.3.1) (2026-04-03)
+
+
+### Bug Fixes
+
+* **ci:** move the changelog types into config file and manifest file ([#18](https://github.com/akarsh/jsonresume-theme-onepage-simplified/issues/18)) ([cb55024](https://github.com/akarsh/jsonresume-theme-onepage-simplified/commit/cb55024cd7135190f2f7ce218854f7bd8964da9e))
+
 ## [1.3.0](https://github.com/akarsh/jsonresume-theme-onepage-simplified/compare/v1.2.4...v1.3.0) (2026-04-03)
 
 
