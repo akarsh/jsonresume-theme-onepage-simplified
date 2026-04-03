@@ -33,7 +33,7 @@
     "style.css"
   ],
   "dependencies": {
-    "css": "2.2.x",
+    "css": "^3.0.0",
     "handlebars": "^4.0.11"
   },
   "devDependencies": {
