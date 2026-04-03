@@ -1,52 +1,130 @@
 # jsonresume-theme-onepage-simplified
 
-A simplified theme for [JSON Resume](http://jsonresume.org/), designed for printing.
+A simplified, compact, and printable theme for [JSON Resume](https://jsonresume.org/) that fits an entire resume on a single page.
 
-Tries to fit as much information as possible onto a single page without making sections look cluttered.
+## Table of Contents
 
-## Example
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [JSON Resume Format](#json-resume-format)
+- [Theme Features](#theme-features)
+- [Customization](#customization)
+- [Development](#development)
+- [Browser Support](#browser-support)
+- [Contributing](#contributing)
+- [License](#license)
+- [Authors](#authors)
+- [Credits](#credits)
 
-http://themes.jsonresume.org/theme/onepage-simplified
+## Features
 
-## Running
+- 📄 **Single Page Design** - Optimized to fit a complete resume on one page
+- 🎨 **Clean & Minimal** - Professional, distraction-free layout
+- 🖨️ **Print-Friendly** - Perfect for PDF export and printing
+- 📱 **Responsive** - Works on all screen sizes
+- ⚡ **Lightweight** - Minimal dependencies
+- 🎯 **Smart Formatting** - Automatically organizes courses into columns (3-column layout)
+
+## Installation
+
+### Using pnpm (recommended)
+
+```bash
+pnpm add jsonresume-theme-onepage-simplified
+```
+
+### Using npm
+
+```bash
+npm install jsonresume-theme-onepage-simplified
+```
+
+### Using yarn
+
+```bash
+yarn add jsonresume-theme-onepage-simplified
+```
+
+## Usage
+
+### With [resumed](https://github.com/rbardini/resume) CLI (Recommended)
+
+```bash
+npx resumed render resume.json --theme jsonresume-theme-onepage-simplified --output resume.html
+```
+
+### From Source
 
 ```bash
 git clone https://github.com/akarsh/jsonresume-theme-onepage-simplified.git
 cd jsonresume-theme-onepage-simplified
-npm install
-npm run build
-npm run render
+pnpm install
+pnpm build
+pnpm render
 ```
 
-Or, to render a custom resume:
+### Programmatically
 
-```bash
-npm install
-npm run build
-pnpm add .
-pnpm exec resumed render your-resume.json \
-  --theme jsonresume-theme-onepage-simplified \
-  --output resume.html
+```javascript
+import theme from 'jsonresume-theme-onepage-simplified';
+import resume from './resume.json';
+
+const html = theme.render(resume);
 ```
 
-## Development
+## JSON Resume Format
 
-```bash
-npm install
-npm run build   # builds dist/index.js via Vite
+Your resume should follow the [JSON Resume Schema](https://jsonresume.org/schema/). Here's a basic structure:
+
+```json
+{
+  "basics": {
+    "name": "Your Name",
+    "label": "Professional Title",
+    "email": "your.email@example.com",
+    "phone": "+1 (555) 123-4567",
+    "url": "https://yourwebsite.com",
+    "summary": "A brief professional summary",
+    "location": {
+      "address": "123 Main St",
+      "postalCode": "12345",
+      "city": "City",
+      "countryCode": "US",
+      "region": "State"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "yourprofile",
+        "url": "https://linkedin.com/in/yourprofile"
+      }
+    ]
+  },
+  "work": [...],
+  "education": [...],
+  "skills": [...]
+}
 ```
 
-To test rendering locally after making changes:
+## Theme Features
 
-```bash
-npm run build && pnpm exec resumed render resume.json \
-  --theme jsonresume-theme-onepage-simplified \
-  --output resume.html
-```
+### Smart Course Organization
 
-## Options
+Courses listed in education are automatically split into **3 columns** for compact display.
 
-For the "experience" and "skills" sections, you can optionally replace the "highlights" list with a "details" list with this format:
+### Section Transformation
+
+The theme intelligently transforms resume sections:
+- Summaries in work, volunteer, awards, and publications sections are converted to highlights
+- Skills are displayed with proficiency levels
+- Education includes institutions and study types
+
+## Customization
+
+### Available Options
+
+For the "experience" and "skills" sections, you can optionally replace the "highlights" list with a "details" list:
 
 ```json
 "details": [
@@ -57,24 +135,85 @@ For the "experience" and "skills" sections, you can optionally replace the "high
 ]
 ```
 
-See included `resume.json` for more details.
+### Styling
 
-### Note
+The theme uses clean, minimal CSS in [style.css](style.css). You can:
+- Fork this repository and modify `style.css` to customize appearance
+- Override styles in your own stylesheet
+- Modify the Handlebars template in [resume.hbs](resume.hbs)
 
-The website parameters in work experience, publishing, and volunteering are commented out in the [resume.hbs](resume.hbs) file, as URLs consume extra space in the print version of the resume.
+### Website URLs
+
+⚠️ **Note**: Website parameters in work experience, publishing, and volunteering are commented out in [resume.hbs](resume.hbs) to save space in the print version.
+
+## Development
+
+### Prerequisites
+
+- Node.js 20+
+- pnpm 10.33.0+
+
+### Setup
+
+```bash
+git clone https://github.com/akarsh/jsonresume-theme-onepage-simplified.git
+cd jsonresume-theme-onepage-simplified
+pnpm install
+```
+
+### Build
+
+```bash
+pnpm build  # builds dist/index.js via Vite
+```
+
+### Testing
+
+To test rendering locally after making changes:
+
+```bash
+pnpm build && pnpm render
+```
+
+This generates `resume.html` from `resume.json` using your modified theme.
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Resources
+
+- [JSON Resume](https://jsonresume.org/) - Official website
+- [JSON Resume Schema](https://jsonresume.org/schema/) - Complete schema documentation
+- [resumed CLI](https://github.com/rbardini/resume) - CLI tool for rendering resumes
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/improvement`)
+3. Make your changes
+4. Test with `pnpm build && pnpm render`
+5. Submit a pull request
+
+## License
+
+MIT - See [LICENSE.md](LICENSE.md) for details
+
+## Authors
+
+- [Ainsley Chong](https://github.com/ainsleyc)
+- [Divyendu Singh](https://github.com/divyenduz)
+- [Akarsh Seggemu](https://github.com/akarsh)
 
 ## Credits
 
-This project uses Open Source components. You can find the source code of their open source projects along with license information below. We acknowledge and are grateful to these developers for their contributions to open source.
+This project uses open source components. We acknowledge and are grateful to these developers for their contributions:
 
-* Project: [jsonresume-theme-onepage](https://github.com/ainsleyc/jsonresume-theme-onepage)
-  Author: [Ainsley Chong](https://github.com/ainsleyc)
-  License: [MIT](https://github.com/ainsleyc/jsonresume-theme-onepage/blob/master/LICENSE)
-
-* Project: [jsonresume-theme-onepage-ds](https://github.com/divyenduz/jsonresume-theme-onepage-ds)
-  Author: [Divyendu Singh](https://github.com/divyenduz)
-  License: [MIT](https://github.com/divyenduz/jsonresume-theme-onepage-ds/blob/master/LICENSE)
-
-* Project: [jsonresume-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate)
-  Author: [8+ contributors](https://github.com/jsonresume/jsonresume-theme-boilerplate/graphs/contributors)
-  License: [MIT](https://github.com/jsonresume/resume-cli/blob/master/LICENSE)
+- **[jsonresume-theme-onepage](https://github.com/ainsleyc/jsonresume-theme-onepage)** by [Ainsley Chong](https://github.com/ainsleyc) — [MIT License](https://github.com/ainsleyc/jsonresume-theme-onepage/blob/master/LICENSE)
+- **[jsonresume-theme-onepage-ds](https://github.com/divyenduz/jsonresume-theme-onepage-ds)** by [Divyendu Singh](https://github.com/divyenduz) — [MIT License](https://github.com/divyenduz/jsonresume-theme-onepage-ds/blob/master/LICENSE)
+- **[jsonresume-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate)** by [8+ contributors](https://github.com/jsonresume/jsonresume-theme-boilerplate/graphs/contributors) — [MIT License](https://github.com/jsonresume/resume-cli/blob/master/LICENSE)
