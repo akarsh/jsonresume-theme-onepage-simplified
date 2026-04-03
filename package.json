@@ -15,10 +15,11 @@
   "type": "module",
   "main": "./dist/index.js",
   "exports": {
-    "default": "./dist/index.js"
+    ".": "./dist/index.js"
   },
   "scripts": {
     "build": "vite build",
+    "render": "resumed render resume.json --theme jsonresume-theme-onepage-simplified --output resume.html",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
