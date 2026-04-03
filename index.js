@@ -1,9 +1,10 @@
-var fs = require("fs");
-var Handlebars = require("handlebars");
+import Handlebars from "handlebars";
+import template from "./resume.hbs?raw";
+import css from "./style.css?inline";
 
-COURSES_COLUMNS = 3;
+const COURSES_COLUMNS = 3;
 
-PREPEND_SUMMARY_CATEGORIES = [
+const PREPEND_SUMMARY_CATEGORIES = [
   "work",
   "volunteer",
   "awards",
@@ -11,42 +12,36 @@ PREPEND_SUMMARY_CATEGORIES = [
 ];
 
 function validateArray(arr) {
-  return arr !== undefined && arr !== null && arr instanceof Array && arr.length > 0;
+  return Array.isArray(arr) && arr.length > 0;
 }
 
-// Handlebars custom helper for getting the username from url
-// Handlebars.registerHelper('splitUrl', function(url) {
-//   return url.split("/").slice(-1, url.length);
-// });
+export function render(resume) {
+  // Clone to avoid mutating original object (important in serverless)
+  resume = JSON.parse(JSON.stringify(resume));
 
-function render(resume) {
-  // Split courses into 3 columns
+  // Split courses into columns
   if (validateArray(resume.education)) {
-    resume.education.forEach(function(block) {
+    resume.education.forEach((block) => {
       if (validateArray(block.courses)) {
-        splitCourses = [];
-        columnIndex = 0;
-        for (var i = 0; i < COURSES_COLUMNS; i++) {
-          splitCourses.push([]);
-        }
-        block.courses.forEach(function(course) {
+        const splitCourses = Array.from({ length: COURSES_COLUMNS }, () => []);
+        let columnIndex = 0;
+
+        block.courses.forEach((course) => {
           splitCourses[columnIndex].push(course);
-          columnIndex++;
-          if (columnIndex >= COURSES_COLUMNS) {
-            columnIndex = 0;
-          }
+          columnIndex = (columnIndex + 1) % COURSES_COLUMNS;
         });
+
         block.courses = splitCourses;
       }
     });
   }
 
-  PREPEND_SUMMARY_CATEGORIES.forEach(function(category) {
-    if (resume[category] !== undefined) {
-      resume[category].forEach(function(block) {
-        if (block.highlights === undefined) {
-          block.highlights = [];
-        }
+  // Move summary into highlights
+  PREPEND_SUMMARY_CATEGORIES.forEach((category) => {
+    if (resume[category]) {
+      resume[category].forEach((block) => {
+        if (!block.highlights) block.highlights = [];
+
         if (block.summary) {
           block.highlights.unshift(block.summary);
           delete block.summary;
@@ -55,14 +50,8 @@ function render(resume) {
     }
   });
 
-	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
-	var tpl = fs.readFileSync(__dirname + "/resume.hbs", "utf-8");
-	return Handlebars.compile(tpl)({
-		css: css,
-		resume: resume
-	});
+  return Handlebars.compile(template)({
+    css: `<style>${css}</style>`,
+    resume,
+  });
 }
-
-module.exports = {
-	render: render
-};

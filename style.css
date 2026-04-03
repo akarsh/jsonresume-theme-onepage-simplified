@@ -4,18 +4,23 @@ body {
   line-height: 1.4;
   margin: 40px 0;
 }
+
 em {
   color: #999;
 }
+
 p {
   line-height: 1.4;
 }
+
 ul {
   margin-bottom: 0;
 }
+
 li {
   margin-bottom: 2px;
 }
+
 a {
   text-decoration: none;
 }
@@ -27,7 +32,6 @@ a {
   background: #fff;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 4px #aaa;
-  -webkit-box-shadow: 2px 2px 4px #aaa;
 }
 
 .coursesList {
@@ -47,19 +51,18 @@ a {
 .sectionBlock {
   display: flex;
   width: 100%;
+  gap: 1em;
 }
 
 .sectionName {
-  width: 18%;
-  vertical-align: top;
-  display: inline-block;
+  width: 22%;
+  flex-shrink: 0;
 }
 
 .sectionContent {
-  width: 80%;
-  vertical-align: top;
-  display: inline-block;
-  text-align: justify;
+  flex: 1;
+  min-width: 0;
+  text-align: left;
 }
 
 .sectionContent ul {
@@ -81,7 +84,7 @@ a {
 }
 
 .sectionContent .work-company {
-  font-style: italic
+  font-style: italic;
 }
 
 .sectionContent .separator {
@@ -104,7 +107,7 @@ a {
   margin-top: 6px;
 }
 
-.educationBlock .studyType{
+.educationBlock .studyType {
   font-style: italic;
 }
 
@@ -116,24 +119,45 @@ a {
   page-break-inside: avoid;
 }
 
+.blockHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1em;
+}
+
+.blockHeader .title {
+  flex: 1;
+  min-width: 0;
+}
+
+.blockHeader .date {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
 /* Media Queries */
-@media only screen and (max-width: 40em) {
+@media (max-width: 40em) {
   body {
     margin: 0;
     font-size: 14px;
   }
+
   #resume {
     margin: 0 auto;
     max-width: 600px;
     padding: 0.5em 1em;
     border: none;
   }
+
   .sectionBlock {
     flex-direction: column;
   }
+
   .sectionContent {
     width: 100%;
   }
+
   .sectionContent .date {
     padding-right: 2em;
   }
@@ -142,12 +166,19 @@ a {
     padding-right: 2em;
   }
 
+  .sectionContent>span,
+  .sectionContent .summary {
+    text-align: justify;
+  }
+
   .sectionName {
     width: auto;
   }
+
   .largeFont {
     font-size: 20px;
   }
+
   .smallFont {
     font-size: 14px;
   }
@@ -157,14 +188,11 @@ a {
   body {
     background: #FFFFFF;
   }
+
   #resume {
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 0px 0px;
-    border: 0px;
-    background: #fff;
+    padding: 0;
+    border: 0;
     box-shadow: none;
-    -webkit-box-shadow: none;
   }
 
   a {

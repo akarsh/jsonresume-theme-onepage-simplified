@@ -3,18 +3,36 @@
   "version": "1.2.2",
   "description": "Simplified, compact, printable theme for JSON Resume",
   "author": "Ainsley Chong, Divyendu Singh, Akarsh Seggemu",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/akarsh/jsonresume-theme-onepage-simplified.git"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "css": "2.2.x",
-    "handlebars": "^4.0.11"
   },
   "bugs": {
     "url": "https://github.com/akarsh/jsonresume-theme-onepage-simplified/issues"
   },
   "homepage": "https://github.com/akarsh/jsonresume-theme-onepage-simplified",
-  "main": "index.js"
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "vite build",
+    "render": "resumed render resume.json --theme jsonresume-theme-onepage-simplified --output resume.html",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "jsonresume",
+    "jsonresume-theme"
+  ],
+  "dependencies": {
+    "css": "2.2.x",
+    "handlebars": "^4.0.11"
+  },
+  "devDependencies": {
+    "resumed": "^6.1.0",
+    "vite": "^8.0.3",
+    "vite-plugin-handlebars": "^2.0.0"
+  }
 }
