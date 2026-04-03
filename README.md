@@ -14,6 +14,7 @@ A simplified, compact, and printable theme for [JSON Resume](https://jsonresume.
 - [Theme Features](#theme-features)
 - [Customization](#customization)
 - [Development](#development)
+- [Releasing](#releasing)
 - [Browser Support](#browser-support)
 - [Contributing](#contributing)
 - [License](#license)
@@ -191,6 +192,57 @@ pnpm build && pnpm render
 ```
 
 This generates `resume.html` from `resume.json` using your modified theme.
+
+### Releasing
+
+This project uses **[Release Please](https://github.com/googleapis/release-please)** for automated version management and releases.
+
+#### How Releases Work
+
+Release Please automatically manages versioning and changelog generation based on **conventional commits**.
+
+**Workflow:**
+1. Make commits with conventional commit messages (see examples below)
+2. Push to `main` branch
+3. Release Please creates a Release PR with:
+   - Updated `CHANGELOG.md`
+   - Bumped version in `package.json`
+   - Semantic version based on commit types
+4. Review and merge the Release PR
+5. On merge, a GitHub Release is created automatically
+6. Publishing to npm is triggered by the GitHub Release
+
+#### Conventional Commit Format
+
+Use these commit message prefixes to trigger version bumps:
+
+```
+feat: Add new feature           (bumps MINOR version)
+fix: Bug fix                    (bumps PATCH version)
+perf: Performance improvement   (bumps PATCH version, "Performance" section in changelog)
+refactor: Code refactoring      (bumps PATCH version, in changelog)
+docs: Documentation update      (no version bump, but in changelog)
+BREAKING CHANGE: ...            (bumps MAJOR version)
+```
+
+**Examples:**
+```bash
+# Feature (minor version bump)
+git commit -m "feat: add 3-column course layout"
+
+# Bug fix (patch version bump)
+git commit -m "fix: correct spacing in education section"
+
+# Breaking change (major version bump)
+git commit -m "feat!: redesign resume layout
+BREAKING CHANGE: old resume.json format no longer supported"
+```
+
+#### Automatic npm Publishing
+
+The publish workflow (`publish.yml`) automatically publishes to npm when a GitHub Release is created (which happens automatically after merging the Release PR).
+
+See [CHANGELOG.md](CHANGELOG.md) for version history and [.release-please.json](.release-please.json) for configuration.
 
 ## Browser Support
 
