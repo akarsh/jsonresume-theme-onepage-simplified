@@ -26,6 +26,12 @@
     "jsonresume",
     "jsonresume-theme"
   ],
+  "files": [
+    "dist/",
+    "index.js",
+    "resume.hbs",
+    "style.css"
+  ],
   "dependencies": {
     "css": "2.2.x",
     "handlebars": "^4.0.11"

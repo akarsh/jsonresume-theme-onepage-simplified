@@ -1,0 +1,6 @@
+.github/
+.gitignore
+*.md
+!README.md
+resume.json
+resume.html
