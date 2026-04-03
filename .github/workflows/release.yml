@@ -19,15 +19,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           release-type: node
-          package-name: jsonresume-theme-onepage-simplified
-          changelog-types: |
-            [
-              {"type": "feat", "section": "Features", "hidden": false},
-              {"type": "fix", "section": "Bug Fixes", "hidden": false},
-              {"type": "docs", "section": "Documentation", "hidden": false},
-              {"type": "style", "section": "Styles", "hidden": true},
-              {"type": "refactor", "section": "Refactoring", "hidden": false},
-              {"type": "perf", "section": "Performance", "hidden": false},
-              {"type": "test", "section": "Tests", "hidden": true},
-              {"type": "chore", "section": "Miscellaneous", "hidden": true}
-            ]
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json

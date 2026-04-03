@@ -1,0 +1,27 @@
+{
+  "packages": {
+    ".": {
+      "release-type": "node",
+      "package-name": "jsonresume-theme-onepage-simplified",
+      "changelog-sections": [
+        {"type": "feat", "section": "Features", "hidden": false},
+        {"type": "fix", "section": "Bug Fixes", "hidden": false},
+        {"type": "docs", "section": "Documentation", "hidden": false},
+        {"type": "style", "section": "Styles", "hidden": true},
+        {"type": "refactor", "section": "Refactoring", "hidden": false},
+        {"type": "perf", "section": "Performance", "hidden": false},
+        {"type": "test", "section": "Tests", "hidden": true},
+        {"type": "chore", "section": "Miscellaneous", "hidden": true}
+      ]
+    }
+  },
+  "plugins": [
+    {
+      "type": "node-workspace",
+      "workspaceDir": "."
+    }
+  ],
+  "changelog": {
+    "header": "# Changelog\n\nAll notable changes to this project will be documented in this file.\n\nThe format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),\nand this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).\n"
+  }
+}
