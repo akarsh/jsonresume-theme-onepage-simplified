@@ -3,6 +3,12 @@ name: Publish to npm
 on:
   release:
     types: [published]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Run as dry run (no publish)'
+        required: false
+        default: false
 
 jobs:
   publish:
