@@ -2,9 +2,12 @@
 
 A simplified, compact, and printable theme for [JSON Resume](https://jsonresume.org/) that fits an entire resume on a single page.
 
+> **About This Fork**: This is a maintained fork and continuation of [jsonresume-theme-onepage](https://github.com/ainsleyc/jsonresume-theme-onepage) by Ainsley Chong, combining improvements from the [jsonresume-theme-onepage-ds](https://github.com/divyenduz/jsonresume-theme-onepage-ds) variant. It offers modernized tooling, enhanced styling, and better maintainability while preserving the clean, single-page design philosophy.
+
 ## Table of Contents
 
 - [Features](#features)
+- [About This Fork](#about-this-fork)
 - [Installation](#installation)
 - [Usage](#usage)
 - [JSON Resume Format](#json-resume-format)
@@ -25,6 +28,18 @@ A simplified, compact, and printable theme for [JSON Resume](https://jsonresume.
 - 📱 **Responsive** - Works on all screen sizes
 - ⚡ **Lightweight** - Minimal dependencies
 - 🎯 **Smart Formatting** - Automatically organizes courses into columns (3-column layout)
+
+## About This Fork
+
+This project builds upon the excellent foundation laid by [Ainsley Chong](https://github.com/ainsleyc)'s original [jsonresume-theme-onepage](https://github.com/ainsleyc/jsonresume-theme-onepage) theme. Key improvements in this version include:
+
+- **Modern Tooling**: Updated to use Vite for faster builds and better development experience
+- **Enhanced Styling**: Refined CSS for improved visual hierarchy and readability
+- **Better Maintainability**: Cleaner codebase with improved build configuration
+- **Active Maintenance**: Regular updates and community contributions
+- **Backward Compatibility**: Maintains compatibility with the original theme format
+
+For detailed fork history, see the [Credits](#credits) section.
 
 ## Installation
 
@@ -206,14 +221,36 @@ MIT - See [LICENSE.md](LICENSE.md) for details
 
 ## Authors
 
-- [Ainsley Chong](https://github.com/ainsleyc)
+**Current Maintainers (This Fork):**
 - [Divyendu Singh](https://github.com/divyenduz)
 - [Akarsh Seggemu](https://github.com/akarsh)
 
+**Original Creator:**
+- [Ainsley Chong](https://github.com/ainsleyc) — See [Fork History](#fork-history) for details
+
 ## Credits
 
-This project uses open source components. We acknowledge and are grateful to these developers for their contributions:
+### Fork History
 
-- **[jsonresume-theme-onepage](https://github.com/ainsleyc/jsonresume-theme-onepage)** by [Ainsley Chong](https://github.com/ainsleyc) — [MIT License](https://github.com/ainsleyc/jsonresume-theme-onepage/blob/master/LICENSE)
-- **[jsonresume-theme-onepage-ds](https://github.com/divyenduz/jsonresume-theme-onepage-ds)** by [Divyendu Singh](https://github.com/divyenduz) — [MIT License](https://github.com/divyenduz/jsonresume-theme-onepage-ds/blob/master/LICENSE)
+This project is a continuation and modernization of:
+
+1. **[jsonresume-theme-onepage](https://github.com/ainsleyc/jsonresume-theme-onepage)** (Original)
+   - Creator: [Ainsley Chong](https://github.com/ainsleyc)
+   - The foundational single-page resume theme
+   - License: MIT
+
+2. **[jsonresume-theme-onepage-ds](https://github.com/divyenduz/jsonresume-theme-onepage-ds)** (Enhancement Fork)
+   - Creator: [Divyendu Singh](https://github.com/divyenduz)
+   - Added improvements and maintained the theme
+   - License: MIT
+
+3. **jsonresume-theme-onepage-simplified** (Current, This Repository)
+   - Current Maintainers: [Divyendu Singh](https://github.com/divyenduz), [Akarsh Seggemu](https://github.com/akarsh)
+   - Modern tooling, enhanced styling, active maintenance
+   - License: MIT
+
+### Open Source Dependencies
+
+We also acknowledge these projects:
+
 - **[jsonresume-theme-boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate)** by [8+ contributors](https://github.com/jsonresume/jsonresume-theme-boilerplate/graphs/contributors) — [MIT License](https://github.com/jsonresume/resume-cli/blob/master/LICENSE)

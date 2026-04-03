@@ -1,6 +1,11 @@
 The MIT License (MIT)
 
+Copyright (c) 2015 Ainsley Chong
+Copyright (c) 2017 Divyendu Singh
 Copyright (c) 2018 Akarsh Seggemu
+
+Portions of this software are based on https://github.com/ainsleyc/jsonresume-theme-onepage, 
+licensed under the MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
